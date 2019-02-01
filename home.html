@@ -1,0 +1,123 @@
+<!-- to validate html: validator.w3.org/check -->
+
+<!DOCTYPE HTML> <!-- tells the browser to render the page using html5 specs. -->
+
+<html lang="en">
+
+<head> <!-- data for the doc -->
+	
+	<meta charset="UTF-8" />
+	<!-- <meta http-equiv="refresh", content="3; url=redirect.html" />  -->
+	<!-- if you want to redirect.In here, perform a refresh, after 3 secs, to the url specified -->
+
+	<meta name="description" content="description goes here" /> <!-- 2000 characters max -->
+	<meta name="keywords" content="html5, javascript, jQuery" /> <!-- help search engines to describe what type of data in the web page --> <!-- 1000 characters max -->
+	<meta name="robots" content="index, follow" /> <!-- how search engines should index the contents: index-should read the content, follow-the links also should be indexed -->
+
+	<script src="randomcolorchange.js"></script>
+
+	<base href="http://localhost/html5/" />
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="icon" href="favicon.ico">
+
+	<title>HTML5 Tutorial</title>
+
+</head>
+
+ <body>
+ 	
+ <!-- in html5, div & spans are for styling, not for structural purposes -->
+	<div id="wrapper">
+		
+		<header>
+			<h1> Structure of a website </h1>
+		</header>
+
+		<nav id="horzNav">
+			<p>
+				<a href="home.html">Home</a>
+				<a href="index.html">Index</a>
+				<a href="canvas.html">Canvas</a>
+				<a href="form.html">Forms</a>
+				<a href="webstore.html">Storage</a>
+							
+			</p>
+		</nav>
+
+ <!-- surround the content -->
+		<main id="content"> 
+		<!-- surround the blocks of content -->
+			<section>
+				<h2> </h2>
+				<!-- self-contained block of content (completely on its own) -->
+					<article>
+						<!-- headings -->
+						<h3></h3>
+						<!-- contents --> 
+						<p>
+							
+						</p>
+						<!-- content that should stand along, but related -->
+						<aside>
+							
+						</aside>
+					</article>
+
+					<article>
+						<h3>Tables</h3>
+
+						<table id="tableData">
+							<caption>Baseball</caption>
+							<thead>
+								<tr>
+									<td colspan="4">Best baseball players</td>
+								</tr>
+							</thead>
+
+							<tfoot>
+								<tr>
+									<td colspan="4">* Hall of fame</td>
+								</tr>
+							</tfoot>
+
+							<tbody>
+								<tr>
+									<td></td>
+									<td>an</td>
+									<td>al</td>
+									<td>ak</td>	
+								</tr>
+								<tr>
+									<td>akl</td>
+									<td>a1</td>
+									<td>a2</td>
+									<td>a3</td>	
+								</tr>
+								<tr>
+									<td>aklg</td>
+									<td>b1</td>
+									<td>b2</td>
+									<td>b3</td>	
+								</tr>
+							</tbody>
+
+						</table>
+						<br />
+					</article>
+			</section>
+		</main>
+
+		<footer>
+			<address>
+				Uni of Pera
+			</address>
+			<small>
+				Copyright@
+			</small>
+		</footer>
+
+	</div>
+
+ </body>
+
+</html>

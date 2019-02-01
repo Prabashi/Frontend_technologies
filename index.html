@@ -1,0 +1,126 @@
+<!-- to validate html: validator.w3.org/check -->
+
+<!DOCTYPE HTML> <!-- tells the browser to render the page using html5 specs. -->
+
+<html lang="en">
+
+<head> <!-- data for the doc -->
+	
+	<meta charset="UTF-8" />
+	<!-- <meta http-equiv="refresh", content="3; url=redirect.html" />  -->
+	<!-- if you want to redirect.In here, perform a refresh, after 3 secs, to the url specified -->
+
+	<meta name="description" content="description goes here" /> <!-- 2000 characters max -->
+	<meta name="keywords" content="html5, javascript, jQuery" /> <!-- help search engines to describe what type of data in the web page --> <!-- 1000 characters max -->
+	<meta name="robots" content="index, follow" /> <!-- how search engines should index the contents: index-should read the content, follow-the links also should be indexed -->
+
+	<script src="randomcolorchange.js"></script>
+
+	<base href="http://localhost/html5/" />
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="icon" href="favicon.ico">
+
+	<title>HTML5 Tutorial</title>
+
+</head>
+
+ <body>
+ 	
+ <!-- in html5, div & spans are for styling, not for structural purposes -->
+	<div id="wrapper">
+
+		<header>
+			<h1> Options of a website </h1>
+		</header>
+
+		<nav id="horzNav">
+			<p>
+				<a href="home.html">Home</a>
+				<a href="index.html">Index</a>
+				<a href="canvas.html">Canvas</a>
+				<a href="form.html">Forms</a>
+				<a href="webstore.html">Storage</a>
+
+			</p>
+		</nav>
+		
+		<noscript>Please enable Javascript</noscript> <!-- if user has disabled Javascript -->
+
+		<h1>
+			Change with click!
+		</h1>
+
+		<a id="pageTop">Top of Page</a>
+		<a href="index.html#pageBottom">Go to Bottom</a>
+
+		<p>
+			There’s a false belief in the web development community that CSS animation is the only performant way to animate on the web. <br> This myth has coerced many developers to abandon JavaScript-based animation altogether, thereby (1) forcing themselves to manage complex UI interaction within style sheets, (2) locking themselves out of supporting Internet Explorer 8 and 9, and (3) forgoing the beautiful motion design physics that are possible only with JavaScript.
+		</p>
+
+		<hr>
+
+		<blockquote cite="https://www.smashingmagazine.com/2014/09/animating-without-jquery/"> <!-- cite to indicate where the content comes from -->
+			There’s a false belief in the web development community that CSS animation is the only performant way to animate on the web.
+		</blockquote>
+
+		<q cite="https://www.smashingmagazine.com/2014/09/animating-without-jquery/">
+			There’s a false belief in the web development community that CSS animation is the only performant way to animate on the web.	
+		</q>
+
+		<!-- when you want to keep all the white space -->
+		<pre>
+			<  >
+			|  |
+			|  |
+			|  |
+			>  <
+		</pre>
+
+  		<!-- when you want to keep all the white space, code (not executing) -->
+		<pre>
+			<code>
+				function init(){
+					var <var>h1tags</var> = document.getElementsByTagName("h1");
+					<var>h1tags[0]</var>.onclick = changeColor;
+				}
+			</code>	
+		</pre>
+
+		<img id="imgCat" src="imgCat.jpg" width="250" height="180" alt="Cat jumping">
+		<br />
+		<a href="javascript:toggleImg()">Toggle Image</a>
+		<br />
+
+		<b>Bold</b> <br />
+		<Strong>Strong</Strong> <br />
+		<em>Emphasis</em> <br />
+		<i>Italic</i> <br /> <br />
+
+		<small>Small</small> <br />
+		<ins>Insert</ins> <br />
+		<del>Delete</del> <br />
+		<samp> Sample programming output</samp> <br /><br />
+
+		For an abbreviation: <abbr title="abbreviation">abbrv.</abbr> <br />
+		<dfn>Definition:</dfn> The formal statement ............ <br />
+
+		<dfn title="The formal statement ..........">Definition</dfn> <br />
+
+		<kbd>Keyboard</kbd> <br />
+
+		<a href="http://www.google.com">Google</a>
+
+		<a id="pageBottom">Bottom of Page</a>
+		<a href="index.html#pageTop">Go to Top</a>
+
+		<!-- to embed external files with different formats -->
+		<object data="425Demo.pdf" type="application/pdf" width="750" height="400"></object>
+		<object data="index.html" type="text/html" width="750" height="400"></object>
+
+		<iframe src="https://www.smashingmagazine.com/2014/09/animating-without-jquery/" width="750" height="400"></iframe>
+
+	</div>
+
+ </body>
+
+</html>
